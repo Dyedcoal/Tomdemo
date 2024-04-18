@@ -6,12 +6,14 @@ pipeline{
         
         stage('Git Checkout'){
             
-            steps{
-                
-                script{
-                    
-                    git 'https://github.com/Tomiphred/Tomdemo.git'
-                }
+            steps{ 
+                    git 'https://github.com/Tomiphred/Tomdemo.git'   
+            }
+        }
+        stage('UNIT testing'){
+            
+            steps{ 
+                    sh 'mvn test'   
             }
         }
     }
