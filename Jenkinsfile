@@ -10,7 +10,7 @@ pipeline{
                 
                 script{
                     
-                    git branch: 'main', url: 'https://github.com/Tomiphred/Tomdemo.git'
+                    git 'https://github.com/Tomiphred/Tomdemo.git'
                 }
             }
         }
