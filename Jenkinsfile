@@ -7,7 +7,7 @@ pipeline{
         stage('Git Checkout'){
             
             steps{ 
-                    git 'https://github.com/Tomiphred/Tomdemo.git'   
+                    git 'https://github.com/Dyedcoal/Tomdemo.git'   
             }
         }
         stage('UNIT testing'){
